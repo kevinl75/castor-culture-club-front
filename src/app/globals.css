@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --background: #0a0a0a;
+  --background: #0b0b0b;
   --foreground: #ededed;
 }
 
@@ -13,7 +13,7 @@ html:has(dialog[open]) {
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #0b0b0b;
     --foreground: #ededed;
   }
 }

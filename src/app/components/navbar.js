@@ -1,23 +1,21 @@
+import Image from "next/image";
+import LoginModal from "./loginModal";
+
 export default function NavBar() {
   return (
     <nav className="p-6 shadow-sm">
       <div className="container mx-auto flex justify-between items-center">
         <div className="flex items-center gap-4">
-          <span className="text-xl font-bold text-white">Barrage Culture</span>
+          <Image src="/logo.png" alt="Logo" width={80} height={80} />
+          <span className="text-2xl font-bold text-white">
+            Castor Culture Club
+          </span>
         </div>
-        <div className="flex gap-6">
-          <a href="#" className="text-white hover:text-yellow-300">
+        <div className="flex gap-6 items-center">
+          <a href="#" className="text-lg text-white hover:text-gray-500">
             Accueil
           </a>
-          <a href="#" className="text-white hover:text-yellow-300">
-            Articles
-          </a>
-          <a href="#" className="text-white hover:text-yellow-300">
-            Podcasts
-          </a>
-          <a href="#" className="text-white hover:text-yellow-300">
-            Vidéos
-          </a>
+          <LoginModal />
         </div>
       </div>
     </nav>

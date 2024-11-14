@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 
-export default function OpenLoginPopupButton() {
+export default function LoginModal() {
   const [showPopup, setShowPopup] = useState(false);
   function handleClick() {
     console.log("Open Login Popup");
@@ -11,10 +11,10 @@ export default function OpenLoginPopupButton() {
     <div>
       <button
         id="open-login-popup"
-        className="inline-flex text-md sm:text-xl transition-colors duration-200 focus:ring-2 focus:ring-offset-2 focus:ring-current focus:outline-none rounded-md text-white bg-blue-500 hover:bg-blue-700 px-4 py-2"
+        className="inline-flex text-lg transition-colors duration-200 focus:ring-2 focus:ring-offset-2 focus:ring-current focus:outline-none rounded-md text-white bg-blue-500 hover:bg-blue-700 px-4 py-2"
         onClick={handleClick}
       >
-        Login
+        Se connecter
       </button>
       {showPopup && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
